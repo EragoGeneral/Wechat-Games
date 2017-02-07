@@ -3,3 +3,4 @@ init the project for wechat games
 
 1. add games  -->  游戏列表
 2. add dhd	  -->  点花灯
+3. add chuanyue		-->  穿越回古代
