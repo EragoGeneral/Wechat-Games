@@ -15,3 +15,4 @@ init the project for wechat games
 2. add dhd	  				-->  点花灯
 3. add chuanyue				-->  穿越回古代
 4. add dianpao    			-->  点炮过大年
+5. add jiangshi				-->  僵尸大战植物
