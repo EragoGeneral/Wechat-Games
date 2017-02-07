@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>元宵点花灯</title><meta name="x-share-desc" content="正月十五放花灯了，我的祝福满人间！" data-custom="正月十五放花灯，我一共放飞了{s}个祝福灯，天都亮了！你放了吗？"><meta name="x-share-title" content="正月十五点花灯，灯灯祝福！"><meta name="x-author" content="HW0001"><meta name="x-key" content="61ec2bc2a44a7367b2a82ec4b66b5bc2">
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no,target-densitydpi=device-dpi"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="full-screen" content="true"/>
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true"/>
+<meta name="360-fullscreen" content="true"/>
+<script type="text/javascript" src="js/play_sdk.js"></script>
+<script language="javascript" type="text/javascript" src="js/play.js"></script>
+<style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+            overflow: hidden;
+        }
+        div, canvas {
+            display:block;
+            position:absolute;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+</head>
+<body><img id="wxsicon" src="54f6ae132eb3f_wx.jpg" width="0" height="0" style="position:absolute">
+<div style="position:relative;" id="gameDiv"></div>
+<script>var document_class = "Main";</script>
+<script src="launcher/egret_require.js"></script>
+<script src="launcher/egret_loader.js"></script>
+<script src="launcher/game-min.js?v2"></script>
+<script>
+    var support = [].map && document.createElement("canvas").getContext;
+    if (support) {
+		updateShare(0);
+        setTimeout(egret_h5.startGame, 800);
+    }
+    else {
+        alert("不支持您当前的浏览器")
+    }
+</script>
+
+<!--  通用部分所有游戏均需添加，后期考虑独立成一个js  -->
+<div id="concert">			
+	<img width="100%" src="banner.png"
+	style="position: fixed; z-index: 9999; bottom: 0; left: 0; " onclick="gotoGames();" ontouchstart="window.location.href='http://mp.weixin.qq.com/s/hM-v5jADbr7m6fhSyNA83g';" />	
+</div>
+<script>
+	function timeout(){      
+		document.getElementById('concert').style.display='none';
+	}  
+	setTimeout("timeout()",3000);
+</script>
+<script language="javascript" src="http://wxsxz117.cc:8080/CarRenting/webserver/statisticsGames?game=dhd"></script>
+
+</body>
+</html>
