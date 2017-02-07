@@ -1,7 +1,17 @@
-﻿init the project for wechat games
+﻿#####################################################################
+#																	#
+#    添加游戏步骤 													#
+#    1. 工程目录下添加代码目录										#
+#	 2. game 工程目录下 添加当前游戏icon							#	
+#    3. 游戏列表添加当前游戏, 即更新game 工程目录下 index.html		#
+#    4. 更新readme.txt 文件，添加备注								#	
+#																	#			
+#####################################################################
+
+init the project for wechat games
 2017-02-07
 
-1. add games  		-->  游戏列表
-2. add dhd	  	-->  点花灯
-3. add chuanyue		-->  穿越回古代
-4. add dianpao    	-->  点炮过大年
+1. add games  				-->  游戏列表
+2. add dhd	  				-->  点花灯
+3. add chuanyue				-->  穿越回古代
+4. add dianpao    			-->  点炮过大年
