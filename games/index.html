@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>闻香识小主微信公众号游戏</title>
+<meta name="keywords" content="闻香识小主小游戏，闻香识小主免费小游戏,微信公众号小游戏,微信公众平台小游戏,微信游戏,微信公众号开发，闻香识小主，腾讯微信游戏,微信朋友圈小游戏,微信朋友圈互动小游戏,朋友圈小游戏" />
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+<meta name=”format-detection” content=”telphone=no” /> 
+<meta content=”yes” name=”apple-mobile-web-app-capable” />
+<meta content=”black” name=”apple-mobile-web-app-status-bar-style” />
+<meta content=”telephone=no” name=”format-detection” />
+<meta name="baidu-site-verification" content="yu3S6qg3OZ" />
+<link rel="stylesheet" type="text/css" href="index5/main.min.css?v=1020">
+<script src="http://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+</head>
+<body>
+<div class="hide">
+</div>
+<header id="header">
+	<span id="fenxiang">喜欢嘛？点击右上角图标分享或收藏吧 ↗ </span>
+	<a href="http://mp.weixin.qq.com/s?__biz=MzIwODY5MzI3MA==&tempkey=k6292KUV1TZgB4SrYo4uyw0NGPK117WFGYV9yZvuT5Dk5IeFTVUQtwdoIR9pjvIn7TEmjc7i%2FDujKPYM%2BYhZdJ1AEtyXTmXRKmUHzhbEy0aVELJ4ZX6Hj4CQIohSv%2F%2FGONvBvEOihQvwFb9bob9mog%3D%3D&chksm=177e705f2009f94924a562e6bcb805a88bc3de9b9122c88d3b652b60826ff96023bc67fbde63&mpshare=1&scene=1&srcid=1225u6WitOW9jlbwFbQio2Tx#wechat_redirect" id="logo">
+	</a>
+</header>
+<section id="banner"></section>
+<section id="content" class="clearfix"></section>
+<script language=javascript>
+var Game = {
+	request:function(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]); return null;
+	}
+}
+var games = new Array();
+var baseurl='http://wxsxz117.cc:8080/';
+var i=0;
+
+
+
+
+var startpos=0;
+var endpos=0;
+
+function draw(){
+	var sr="";
+	
+	if(endpos!=games.length) endpos += 12;
+	if(endpos>games.length) endpos=games.length;
+	if (startpos == endpos) return ;
+	if (startpos != 0) sr = "";
+	
+	var content = document.getElementById("content");
+	
+	for(var i=startpos;i<endpos;i++){
+		var gtype=games[i].type;
+		if(!gtype)gtype="休闲竞技";
+		var score=games[i].score;
+		if(!score)score=60;		
+		sr +="<div class='game clearfix'><div class='game-logo'><a href='" + games[i].src + "' target='_blank'><img src='" + games[i].icon + "'></a></div><div class='game-info'><section><p class='title'>" + games[i].name + "</p><p class='des'>有" + (100000+parseInt(Math.random()*1000000)) + "人玩过</p></section><footer class='clearfix'><a href='" + games[i].src + "' target='_blank' class='btn-play'>开始游戏</a><div class='qr-wrap'><span class='qr'></span><div class='game-qr'><img src='http://s.jiathis.com/qrcode.php?url="+encodeURIComponent(games[i].src)+"'></div></div></footer></div></div>";
+
+	}
+	
+	startpos=endpos;
+	content.innerHTML=content.innerHTML + sr;
+	
+	if (endpos >= games.length) {
+		document.getElementById("loading").style.display = "none";
+	}
+
+}
+draw();
+</script>
+<div id="loading" onClick="draw();">
+            <span style="font-size:16px;">查看更多...</span>
+</div>
+<footer id="footer">
+</footer>
+<br>
+<br>
+<br>
+<style>
+#fix_footer {
+	-moz-box-shadow:0px 0px 11px #191919;
+	-webkit-box-shadow:0px 0px 11px #191919;
+	box-shadow:0px 0px 11px #191919;
+}
+#fix_footer_menu{
+	border-right:1px solid rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.1);
+	font-family: 黑体;
+}
+#fix_footer_menu_on {
+	border-right:1px solid rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.3);
+	font-family: 黑体;
+	background:#202020; /* Fallback color for old browsers */
+}
+#loading{
+	height: 34px;
+	line-height: 34px;
+	margin: 10px;
+	background-image: -webkit-gradient(linear,0 100%,0 0,color-stop(0.03,rgb(224,224,224)),color-stop(.31,rgb(226,226,226)),color-stop(1,rgb(236,236,236)));
+	background: -webkit-linear-gradient(bottom,rgb(224,224,224) 3%,rgb(226,226,226) 31%,rgb(236,236,236)) rgb(236,236,236);
+	border-radius: 3px;
+	text-align: center;
+        text-shadow: #fff 0 1px 0;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(34,34,34,0.31);
+	box-shadow: 0px 1px 2px 0px rgba(34,34,34,0.31);
+	font-size: 16px;
+	color: rgb(80,80,80);
+	-webkit-text-shadow: 1px 1px 0px rgba(12,3,7,.1);
+	display: block;
+}
+</style>
+
+<div class="fix_footer" id="fix_footer" style="left:0;background-color:#191919;color:#ffffff;height:30px;width:100%;position:fixed;bottom:0%;font-size:14px;box-shadow: 0px 0px 11px #191919; padding-top:5px">
+<table width=100% height=100% border=0 style="border-collapse: collapse;">
+<tr>
+
+<td id="fix_footer_menu" onClick="window.location='http://mp.weixin.qq.com/s/hM-v5jADbr7m6fhSyNA83g'"  align=center><img src="index5/icon64_wx_logo.png" width="20" height="20" align="absmiddle">关注我们</td>
+</tr>
+</table>
+</div>
+<script language="javascript" src="http://wxsxz117.cc:8080/CarRenting/webserver/statisticsGames?game=games"></script>
+</body>
+</html>
