@@ -1,0 +1,44 @@
+{
+    "en": {
+        "score_text"    : "Current score",
+        "hiscore_text"  : "Hi score",
+        "tutor_text"    : "TUTORIAL",
+        "tutor1_text"   : "Tap on the workers to kiss when the boss is not looking at them.",
+        "tutor2_text"   : "Be carefull!! Sometimes the boss will look at them.",
+        "tutor3_text"   : "The game ends when the boss knows about your love affair.",
+        "pause_text"    : "PAUSED",
+        "failed_text"   : "FAILED",
+        "bg_failed_text" : "She was more impressed with your boss. Try harder!",
+        "bg_normal_text" : "You almost get her!! Try harder!!",
+        "success_text"  : "SUCCESS",
+        "bg_success_text"  : "She loves you!!! Good job!!"
+    },
+
+    "de": {
+        "score_text"    : "Current score",
+        "hiscore_text"  : "Hi score",
+        "tutor1_text"   : "Tap on the workers to kiss when the boss is not looking at them.",
+        "tutor2_text"   : "Be carefull!! Sometimes the boss will look at them.",
+        "tutor3_text"   : "The game ends when the boss knows about your love affair.",
+        "pause_text"    : "PAUSE",
+        "failed_text"   : "FAILED",
+        "bg_failed_text" : "She was more impressed with your boss. Try harder!",
+        "bg_normal_text" : "You almost get her!! Try harder!!",
+        "success_text"  : "SUCCESS",
+        "bg_success_text"  : "She loves you!!! Good job!!"
+    },
+
+    "tr": {
+        "score1_text"   : "Current score",
+        "score2_text"   : "Hi score",
+        "tutor1_text"   : "Tap on the workers to kiss when the boss is not looking at them.",
+        "tutor2_text"   : "Be carefull!! Sometimes the boss will look at them.",
+        "tutor3_text"   : "The game ends when the boss knows about your love affair.",
+        "pause_text"    : "PAUSE",
+        "failed_text"   : "FAILED",
+        "bg_failed_text" : "She was more impressed with your boss. Try harder!",
+        "bg_normal_text" : "You almost get her!! Try harder!!",
+        "success_text"  : "SUCCESS",
+        "bg_success_text"  : "She loves you!!! Good job!!"
+    }
+}

@@ -17,3 +17,8 @@ init the project for wechat games
 4. add dianpao    			-->  点炮过大年
 5. add jiangshi				-->  僵尸大战植物
 6. add chazhen				-->  见缝插针
+
+add two games
+2017-02-13
+7. add 2048qinglv			-->	 2048情侣	
+8. add yhqrj				-->	 约会情人节
