@@ -26,3 +26,4 @@ add two games
 
 2017-02-15
 9. add nqtk					-->  扭曲天空
+10. add scxt				-->  上窜下跳
