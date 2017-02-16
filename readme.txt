@@ -32,3 +32,4 @@ add two games
 
 2017-02-26
 13. add xdgf				-->	 新蛋高飞
+14. add wmsj				-->  亡命射箭

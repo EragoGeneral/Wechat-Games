@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html>
+<head><meta name="x-key" content="e56d2d6a4bfe26a4fbdd4e05dc9785fb">
+    <meta charset="GBK">
+    <title>亡命射箭</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+	<img src="http://wxsxz117.cc:8080/games/games/wmsj/logo.jpg" width="0" height="0"/>
+    <div class="grid" id="grid">
+        <div class="page" id="index">
+            <img class="logo" src="assets/img/logo.png" alt="亡命射箭">
+            <img class="start" id="btn-start" src="assets/img/start.png">
+            <img class="start" id="btn-more2" src="assets/img/more.png">
+            <div style="clear:both"></div>
+            <img class="copyright" src="assets/img/boyaa.png">	
+        </div>
+        <div class="page" id="game">
+            <div class="view-wrap">
+                <div id="apple" class="apple"></div>
+                <div id="score"></div>
+                <div class="people"></div>
+                <div class="bow"></div>
+                <div class="arrow"></div>
+                <div class="bar">
+                    <div class="progress">
+                    </div>
+                    <div class="barLifes">
+                    </div>
+                </div>
+            </div>
+            <div id="control">
+            </div>
+        </div>
+        <div class="page hide" id="gameover">
+            <div class="info hide">
+            </div>
+            <div class="fail-one hide"></div>
+            <div class="fail-two hide"></div>
+            <div class="fail-three hide"></div>
+
+            <div class="btn-wrap">
+                <div class="btn" id="btn-restart"></div>
+                <div class="btn" id="btn-share"></div>
+                <div class="btn" id="btn-more"></div>
+            </div>
+        </div>
+        <div class="page hide" id="jd"></div>
+    </div>
+    <!-- js files start -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        var maxWidth = 640, maxHeight = 960;
+        var currWidth = document.body.clientWidth;
+        var currHeight = document.body.clientHeight;
+        var scale = Math.min(currWidth / maxWidth, currHeight / maxHeight); //固定比率 变尺寸
+        $("#grid").css({
+            "-webkit-transform": "scale(" + scale + "," + scale + ")",
+            "-moz-transform": "scale(" + scale + "," + scale + ")",
+            "transform": "scale(" + scale + "," + scale + ")"
+        });
+
+		function gotoGames(){
+			window.location = 'http://mp.weixin.qq.com/s/hM-v5jADbr7m6fhSyNA83g';
+		}	
+		
+		function timeout(){      
+			document.getElementById('concert').style.display='none';
+		}  
+		setTimeout("timeout()",5000);  
+    </script>
+    <script src="assets/js/bar.js"></script>
+	<!--<div style="height: 10%;width: 100%;background-color: #A4D2FF;position: fixed;bottom: 0px;/* border: solid; */">
+		<div style="float: right;/* width: 90px; */border: solid 1px #0669AD;font-size: 1.8em;margin-right: 10px;margin-top: 8px;letter-spacing: 10px;padding-left: 10px;">关注</div>
+	</div>-->
+	<div id="concert">			
+		<img width="100%" src="banner.png"
+		style="position: fixed; z-index: 9999; bottom: 0; left: 0; " onclick="gotoGames();" />	
+	</div>
+	<script type="text/javascript">var web_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + web_protocol + "wxsxz117.cc:8080/CarRenting/webserver/statisticsGames%3Fgame%3Dwmsj' type='text/javascript'%3E%3C/script%3E"));</script>
+	</body>
+</html>
