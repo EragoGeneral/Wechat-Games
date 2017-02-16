@@ -35,3 +35,4 @@ add two games
 13. add xdgf				-->	 新蛋高飞
 14. add wmsj				-->  亡命射箭
 15. add ljsp				-->  六角碎片
+16. add chdzz				-->  吃货大作战
