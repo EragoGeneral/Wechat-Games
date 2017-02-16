@@ -29,3 +29,6 @@ add two games
 10. add scxt				-->  上窜下跳
 11. add bpbxd				-->  奔跑吧兄弟
 12. add znm					-->  找你妹
+
+2017-02-26
+13. add xdgf				-->	 新蛋高飞
