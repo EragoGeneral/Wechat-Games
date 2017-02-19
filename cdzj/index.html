@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>拆弹专家</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+
+    <style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+        html {
+            -ms-touch-action: none; 
+            overflow: hidden;
+        }
+        div, canvas {
+            display:block;
+            position:absolute;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+        }
+		 .aliForPc {display:none;position:fixed;top:5px;right:5px;width:200px;height:230px;overflow:hidden;z-index:99999;}
+    </style>
+
+
+</head>
+<body>
+<img src="http://wxsxz117.cc:8080/games/games/cdzj/logo.jpg" width="0" height="0"/>
+<!-- <div class='aliForPc'><img src='forpc.png'/></div> -->
+<div style="position:relative;" id="gameDiv"></div>
+<script>var document_class = "Main";</script>
+<script src="launcher/egret_require.js"></script>
+<script src="launcher/egret_loader.js"></script>
+<script src="launcher/game-min.js"></script>
+
+<script>
+    egret_h5.startGame();
+</script>
+<script language=javascript>
+    function showshare(){
+	};
+    function clickMore(){
+		window.location.href='http://wxsxz117.cc:8080/games/index.html';
+	  //setTimeout(Play68.goHome(),700);	
+	};
+	
+</script>
+<div id="concert">			
+	<img width="100%" src="banner.png"
+	style="position: fixed; z-index: 9999; bottom: 0; left: 0; " onclick="gotoGames();" ontouchstart="window.location.href='http://mp.weixin.qq.com/s/hM-v5jADbr7m6fhSyNA83g';" />	
+</div>
+<script>
+	function timeout(){      
+		document.getElementById('concert').style.display='none';
+	} 
+	setTimeout("timeout()",3000);
+</script>
+<script type="text/javascript">var web_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + web_protocol + "wxsxz117.cc:8080/CarRenting/webserver/statisticsGames%3Fgame%3Dcdzj' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</body>
+
+</html>
