@@ -44,3 +44,4 @@ add two games
 
 2017-02-19
 20.	add cdzj				-->  拆弹专家
+21. add msqq				-->  魔术气球
