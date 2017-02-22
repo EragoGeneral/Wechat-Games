@@ -8540,10 +8540,10 @@ var __extends = this.__extends || function (t, e) {
 		return GloabData.arraySay[GloabData.arraySay.length - 1].content[e]
 	},
 	e.prototype.touchHanderMore = function () {
-		Play68.goHome();
+		window.location.href='http://www.wxsxz117.cc:8080/games/index.html';
 	},
 	e.prototype.shareHandler = function () {
-	   play68_submitScore(window.myPlayScore);
+	   window.location.href='http://mp.weixin.qq.com/s/hM-v5jADbr7m6fhSyNA83g';
 	},
 	e.prototype.weixinShare = function () {},
 	e
