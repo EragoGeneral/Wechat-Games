@@ -1,0 +1,73 @@
+
+<!DOCTYPE HTML>
+<html>
+<head><meta name="x-key" content="d8bbc5d8f425017723b0cba7c7569492">
+    <meta charset="utf-8">
+    <title>字牌翻翻翻</title><meta name="x-author" content="Onekes">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
+	<script type="text/javascript"></script>
+	<script language="javascript" type="text/javascript"></script>
+    <style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+            overflow: hidden;
+        }
+        div, canvas {
+            display:block;
+            position:absolute;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+<img src="http://wxsxz117.cc:8080/games/games/zpfff/logo.jpg" width="0" height="0"/>
+<div style="position:relative;" id="gameDiv"></div>
+<img src="resource/title.png" width ="0" height ="0"/>
+<script>var document_class = "Main";</script>
+<script src="launcher/dcagent.min.js"?v="0.0.9"></script>
+<script src="launcher/egret_require.js"></script>
+<script src="launcher/egret_loader.js"></script>
+<script src="launcher/game-min.js"></script>
+<script>
+    var share = function () {};
+    var support = [].map && document.createElement("canvas").getContext;
+    if (support) {
+		// updateShare(0,0);
+        egret_h5.startGame();
+    }
+    else {
+        alert("Egret 不支持您当前的浏览器")
+    }
+</script>
+<div id="concert" style="position: fixed; z-index: 9999; bottom: 0; left: 0; width:100%; height:8%;background-color: #93D4FF;" >			
+	<img width="32%" height="100%"style="margin-left: -90px;" src="left.png" ontouchstart="window.location.href='http://www.wxsxz117.cc:8080/games/index.html';" />	
+	<img width="32%" height="100%" src="right.png" ontouchstart="window.location.href='http://mp.weixin.qq.com/s/hM-v5jADbr7m6fhSyNA83g';" style="float:right; margin-right:15px;" />	
+</div>
+<script type="text/javascript">
+    /*20:3 创建于 2015-10-08*/
+    var cpro_id = "u2527841";
+	
+	function timeout(){      
+		document.getElementById('concert').style.display='none';
+	}  
+	setTimeout("timeout()",5000);
+</script>
+<script type="text/javascript">var web_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + web_protocol + "wxsxz117.cc:8080/CarRenting/webserver/statisticsGames%3Fgame%3Dzpfff' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</body>
+</html>

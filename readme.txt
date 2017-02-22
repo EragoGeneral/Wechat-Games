@@ -45,3 +45,6 @@ add two games
 2017-02-19
 20.	add cdzj				-->  拆弹专家
 21. add msqq				-->  魔术气球
+
+2017-02-22
+22. add zpfff				-->  纸牌翻翻翻
